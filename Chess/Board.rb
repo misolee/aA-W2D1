@@ -29,7 +29,7 @@ class Board
   end
   
   def move_piece(start_pos, end_pos)
-    
+    # @grid[start_pos], @grid[end_pos] = @grid[end_pos], @grid[start_pos]
     raise "There is no piece at start position" if start_pos.is_a?(NullPiece)
     raise "There is a piece at the end position" if end_pos.is_a?(Piece)
   end
